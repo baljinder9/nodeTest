@@ -1,0 +1,5 @@
+FROM node
+COPY myapp/*  app/
+RUN npm install
+RUN npm install mocha
+CMD ['npm','test']
